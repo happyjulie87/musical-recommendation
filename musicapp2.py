@@ -26,7 +26,7 @@ questions = {
     "神經質": ["我偏好張力強、懸疑劇情", "劇情高潮時我會感到緊張"]
 }
 
-# ---------- 統一推薦理由 ----------
+# ---------- 0915統一推薦理由 ----------
 def generate_general_reason(user_scores):
     sorted_traits = sorted(user_scores.items(), key=lambda x: x[1], reverse=True)
     top_traits = [trait for trait, score in sorted_traits[:2]]
